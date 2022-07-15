@@ -14,9 +14,7 @@
 	<!-- All the code starts here -->
 
 	 <!-- navbar starts here -->
-     <div class="navbar-nav">
-        <a href="contactus.php" class="nav-link-active">Message</a>
-     </div>
+   
      <?php require_once('includes/navbar.php')?>
      <!-- navbar ends here -->
  <!-- sidebar starts here -->
@@ -49,7 +47,7 @@
                     </tr>
 										
                 </thead>
-                <tbody style="font-size:12px" >
+                <tbody >
 					<?php while($studentMessage= mysqli_fetch_array($fetchMessage))  { ?>
 						<tr >
                         <td><?php echo $studentMessage['no'] ?></td>
